@@ -1,4 +1,4 @@
-name: piperTestStep
+name: myCustomStep
 description: Executes a custom Java build step.
 parameters:
   message:

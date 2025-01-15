@@ -1,5 +1,5 @@
 metadata:
-  name: piperTestStep
+  name: myCustomStep
 spec:
   inputs:
     resources:
@@ -13,8 +13,8 @@ spec:
       - name: commonPipelineEnvironment
         type: piperEnvironment
   containers:
-    - name: my-piper-step
-      image: astanciuona/my-piper-test:latest      # Use your image from registry
+    - name: my-custom-step
+      image: astanciuona/my-piper-test-image:latest      # Use your image from registry
       env:
         - name: MESSAGE
           value: $(params.message) # Pass parameter as environment variable
