@@ -1,3 +1,2 @@
 steps:
-  piperTestStep:
-    message: "Custom message for Piper Test Step"
+  piperTestStep: "This is a test configuration"
