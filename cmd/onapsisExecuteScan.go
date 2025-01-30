@@ -320,7 +320,7 @@ func (srv *ScanServer) ScanProject(config *onapsisExecuteScanOptions, telemetryD
 	log.Entry().Info("Creating request data...") // DEBUG
 	requestData := piperHttp.UploadRequestData{
 		Method:        "POST",
-		URL:           srv.serverUrl + "/cca/v1.0/scan/file",
+		URL:           srv.serverUrl + "/cca/v1.2/scan",
 		File:          zipFileName,
 		FileFieldName: "FileUploadContent",
 		FileContent:   fileHandle,
